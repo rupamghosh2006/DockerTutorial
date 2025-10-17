@@ -32,3 +32,20 @@ This command lists all containers — both running and stopped ones — on your 
 It displays details like Container ID, Image, Command, Created time, Status, Ports, and Names.
 
 📝 Use this command when you want to view every container that exists on your system, not just the active
+
+```bash
+docker start containerName
+```
+
+Explanation:
+Starts a stopped container whose name (or ID) is containerName.
+It resumes the container from its last stopped state.
+
+
+```bash
+docker stop containerName
+```
+
+Explanation:
+Stops a running container whose name (or ID) is containerName.
+This sends a signal to gracefully shut down the container.
