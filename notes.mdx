@@ -8,3 +8,27 @@ This command tells Docker to run a new container using the Ubuntu image (a light
 -i → Keeps STDIN open (interactive mode)
 
 -t → Allocates a terminal so you can interact with the container directly
+
+```bash
+docker container ls
+```
+
+Explanation:
+This command lists all running containers on your system.
+
+It shows details like Container ID, Image, Command, Status, Ports, and Names.
+
+To see all containers (including stopped ones), use:
+
+```bash
+docker container ls -a
+```
+
+Explanation:
+This command lists all containers — both running and stopped ones — on your system.
+
+-a → stands for --all, which includes containers that have exited or stopped.
+
+It displays details like Container ID, Image, Command, Created time, Status, Ports, and Names.
+
+📝 Use this command when you want to view every container that exists on your system, not just the active
