@@ -58,3 +58,39 @@ Stops a running container whose name (or ID) is containerName.
 This sends a signal to gracefully shut down the container.
 
 ---
+
+4. **docker exec containerName command**
+
+```bash
+docker exec -it containerName bash
+```
+
+Starts the container in interactive mode with the terminal attached
+
+---
+
+5. **docker images**
+
+```bash
+docker images
+```
+or
+```bash
+docker image ls
+```
+
+This shows up all images present in docker
+
+---
+
+6. **Port Mapping**
+
+```bash 
+docker run -it -p 8000:8000 node
+```
+
+docker run -it -p myLocalMachinePort:containerPort ImageName
+
+This maps the containerPort with myLocalMachinePort
+
+---
